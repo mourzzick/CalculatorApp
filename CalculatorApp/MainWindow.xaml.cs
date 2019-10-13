@@ -25,9 +25,29 @@ namespace CalculatorApp
         public MainWindow()
         {
             InitializeComponent();
-            acButton.Click += AcButton_Click;
-            plusMinusBuitton.Click += PlusMinusBuitton_Click;
-            percentButton.Click += PercentButton_Click;
+           
+        }
+
+        private void EqualsButton_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        // Clears the calculator display.
+        private void AcButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultLabel.Content = "0";
+        }
+
+        //Negates the value shown on the calculator display.
+        private void PlusMinusBuitton_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            {
+                lastNumber = lastNumber * -1;
+                resultLabel.Content = lastNumber.ToString();
+            }
+
         }
 
         // Converts the value shown on the calculator display to percentage.
@@ -40,33 +60,66 @@ namespace CalculatorApp
             }
         }
 
-        //Negates the value shown on the calculator display.
-        private void PlusMinusBuitton_Click(object sender, RoutedEventArgs e)
-        {
-            if (double.TryParse(resultLabel.Content.ToString(), out lastNumber))
-            {
-                lastNumber = lastNumber * -1;
-                resultLabel.Content = lastNumber.ToString();
-            }
-        }
+   
 
-        // Clears the calculator display.
-        private void AcButton_Click(object sender, RoutedEventArgs e)
-        {
-            resultLabel.Content = "0";
-        }
+
 
         // Adds the value 7 to the calculator display.
-        private void SevenButton_Click(object sender, RoutedEventArgs e)
+        private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
+            int selectedValue = 0;
+
+            if (sender == oneButton)
+            {
+                selectedValue = 1;
+            }
+            if (sender == twoButton)
+            {
+                selectedValue = 2;
+            }
+            if (sender == threeButton)
+            {
+                selectedValue = 3;
+            }
+            if (sender == fourButton)
+            {
+                selectedValue = 4;
+            }
+            if (sender == fiveButton)
+            {
+                selectedValue = 5;
+            }
+            if (sender == sixButton)
+            {
+                selectedValue = 6;
+            }
+            if (sender == sevenButton)
+            {
+                selectedValue = 7;
+            }
+            if (sender == eightButton)
+            {
+                selectedValue = 8;
+            }
+            if (sender == nineButton)
+            {
+                selectedValue = 9;
+            }
+            if (sender == zeroButton)
+            {
+                selectedValue = 0;
+            }
+
             if (resultLabel.Content.ToString().Equals("0"))
             {
-                resultLabel.Content = "7";
+                resultLabel.Content = $"{selectedValue}";
             }
             else
             {
-                resultLabel.Content = $"{resultLabel.Content}{"7"}";
+                resultLabel.Content = $"{resultLabel.Content}{selectedValue}";
             }
         }
-    }
+
+
+    } // end class
 }

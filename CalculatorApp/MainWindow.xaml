@@ -37,12 +37,14 @@
 
         <!--First button row-->
         <Button x:Name="acButton"
+                Click="AcButton_Click"
                 Content="AC"
                 FontSize="18"
                 Grid.Row="1"
                 Margin="5"
                 />
         <Button x:Name="plusMinusBuitton"
+                Click="PlusMinusBuitton_Click"
                 Content="+/-"
                 FontSize="18"
                 Grid.Row="1"
@@ -50,6 +52,7 @@
                 Margin="5"
                 />
         <Button x:Name="percentButton"
+                Click="PercentButton_Click"
                 Content="%"
                 FontSize="18"
                 Grid.Row="1"
@@ -66,13 +69,14 @@
 
         <!--Second button row-->
         <Button x:Name="sevenButton"
-                Click="SevenButton_Click"
+                Click="NumberButton_Click"
                 Content="7"
                 FontSize="18"
                 Grid.Row="2"
                 Margin="5"
                 />
         <Button x:Name="eightButton"
+                Click="NumberButton_Click"
                 Content="8"
                 FontSize="18"
                 Grid.Row="2"
@@ -80,6 +84,7 @@
                 Margin="5"
                 />
         <Button x:Name="nineButton"
+                Click="NumberButton_Click"
                 Content="9"
                 FontSize="18"
                 Grid.Row="2"
@@ -96,12 +101,14 @@
 
         <!--Third button row-->
         <Button x:Name="sixButton"
+                Click="NumberButton_Click"
                 Content="6"
                 FontSize="18"
                 Grid.Row="3"
                 Margin="5"
                 />
         <Button x:Name="fiveButton"
+                Click="NumberButton_Click"
                 Content="5"
                 FontSize="18"
                 Grid.Row="3"
@@ -109,6 +116,8 @@
                 Margin="5"
                 />
         <Button x:Name="fourButton"
+                Click="NumberButton_Click"
+                
                 Content="4"
                 FontSize="18"
                 Grid.Row="3"
@@ -125,12 +134,14 @@
 
         <!--Fourth button row-->
         <Button x:Name="threeButton"
+                Click="NumberButton_Click"
                 Content="3"
                 FontSize="18"
                 Grid.Row="4"
                 Margin="5"
                 />
         <Button x:Name="twoButton"
+                Click="NumberButton_Click"
                 Content="2"
                 FontSize="18"
                 Grid.Row="4"
@@ -138,6 +149,7 @@
                 Margin="5"
                 />
         <Button x:Name="oneButton"
+                Click="NumberButton_Click"
                 Content="1"
                 FontSize="18"
                 Grid.Row="4"
@@ -154,6 +166,7 @@
 
         <!--Fifth button row-->
         <Button x:Name="zeroButton"
+                Click="NumberButton_Click"
                 Content="0"
                 FontSize="18"
                 Grid.Row="5"
@@ -168,6 +181,7 @@
                 Margin="5"
                 />
         <Button x:Name="equalsButton"
+                Click="EqualsButton_Click"
                 Content="="
                 FontSize="18"
                 Grid.Row="5"
