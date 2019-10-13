@@ -5,8 +5,173 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculatorApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="600" Width="400">
+    
+    <Grid Margin="10">
         
+        <!---Define rows and columns-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Display output-->
+        <Label x:Name="lblResult"
+               Content="0"
+               Grid.ColumnSpan="4"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               FontSize="60"
+               />
+
+        <!--First button row-->
+        <Button x:Name="btnAC"
+                Content="AC"
+                FontSize="18"
+                Grid.Row="1"
+                Margin="5"
+                />
+        <Button x:Name="btnPlusMinus"
+                Content="+/-"
+                FontSize="18"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5"
+                />
+        <Button x:Name="btnPercent"
+                Content="%"
+                FontSize="18"
+                Grid.Row="1"
+                Grid.Column="2"
+                Margin="5"
+                />
+        <Button x:Name="btnDevide"
+                Content="/"
+                FontSize="18"
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="5"
+                />
+
+        <!--Second button row-->
+        <Button x:Name="btnSeven"
+                Content="7"
+                FontSize="18"
+                Grid.Row="2"
+                Margin="5"
+                />
+        <Button x:Name="btnEight"
+                Content="8"
+                FontSize="18"
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="5"
+                />
+        <Button x:Name="btnNine"
+                Content="9"
+                FontSize="18"
+                Grid.Row="2"
+                Grid.Column="2"
+                Margin="5"
+                />
+        <Button x:Name="btnMultiply"
+                Content="*"
+                FontSize="18"
+                Grid.Row="2"
+                Grid.Column="3"
+                Margin="5"
+                />
+
+        <!--Third button row-->
+        <Button x:Name="btnSix"
+                Content="6"
+                FontSize="18"
+                Grid.Row="3"
+                Margin="5"
+                />
+        <Button x:Name="btnFive"
+                Content="5"
+                FontSize="18"
+                Grid.Row="3"
+                Grid.Column="1"
+                Margin="5"
+                />
+        <Button x:Name="btnFour"
+                Content="4"
+                FontSize="18"
+                Grid.Row="3"
+                Grid.Column="2"
+                Margin="5"
+                />
+        <Button x:Name="btnMinus"
+                Content="-"
+                FontSize="18"
+                Grid.Row="3"
+                Grid.Column="3"
+                Margin="5"
+                />
+
+        <!--Fourth button row-->
+        <Button x:Name="btnThree"
+                Content="3"
+                FontSize="18"
+                Grid.Row="4"
+                Margin="5"
+                />
+        <Button x:Name="btnTwo"
+                Content="2"
+                FontSize="18"
+                Grid.Row="4"
+                Grid.Column="1"
+                Margin="5"
+                />
+        <Button x:Name="btnOne"
+                Content="1"
+                FontSize="18"
+                Grid.Row="4"
+                Grid.Column="2"
+                Margin="5"
+                />
+        <Button x:Name="btnPlus"
+                Content="+"
+                FontSize="18"
+                Grid.Row="4"
+                Grid.Column="3"
+                Margin="5"
+                />
+
+        <!--Fifth button row-->
+        <Button x:Name="btnZero"
+                Content="0"
+                FontSize="18"
+                Grid.Row="5"
+                Margin="5"
+                Grid.ColumnSpan="2"
+                />
+        <Button x:Name="btnPoint"
+                Content="."
+                FontSize="18"
+                Grid.Row="5"
+                Grid.Column="2"
+                Margin="5"
+                />
+        <Button x:Name="btnEquals"
+                Content="="
+                FontSize="18"
+                Grid.Row="5"
+                Grid.Column="3"
+                Margin="5"
+                />
     </Grid>
 </Window>
