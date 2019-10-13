@@ -66,6 +66,7 @@
 
         <!--Second button row-->
         <Button x:Name="sevenButton"
+                Click="SevenButton_Click"
                 Content="7"
                 FontSize="18"
                 Grid.Row="2"
