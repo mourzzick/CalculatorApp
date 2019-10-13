@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
 
         <!--Display output-->
-        <Label x:Name="lblResult"
+        <Label x:Name="resultLabel"
                Content="0"
                Grid.ColumnSpan="4"
                HorizontalAlignment="Right"
@@ -36,27 +36,27 @@
                />
 
         <!--First button row-->
-        <Button x:Name="btnAC"
+        <Button x:Name="acButton"
                 Content="AC"
                 FontSize="18"
                 Grid.Row="1"
                 Margin="5"
                 />
-        <Button x:Name="btnPlusMinus"
+        <Button x:Name="plusMinusBuitton"
                 Content="+/-"
                 FontSize="18"
                 Grid.Row="1"
                 Grid.Column="1"
                 Margin="5"
                 />
-        <Button x:Name="btnPercent"
+        <Button x:Name="percentButton"
                 Content="%"
                 FontSize="18"
                 Grid.Row="1"
                 Grid.Column="2"
                 Margin="5"
                 />
-        <Button x:Name="btnDevide"
+        <Button x:Name="devideButton"
                 Content="/"
                 FontSize="18"
                 Grid.Row="1"
@@ -65,27 +65,27 @@
                 />
 
         <!--Second button row-->
-        <Button x:Name="btnSeven"
+        <Button x:Name="sevenButton"
                 Content="7"
                 FontSize="18"
                 Grid.Row="2"
                 Margin="5"
                 />
-        <Button x:Name="btnEight"
+        <Button x:Name="eightButton"
                 Content="8"
                 FontSize="18"
                 Grid.Row="2"
                 Grid.Column="1"
                 Margin="5"
                 />
-        <Button x:Name="btnNine"
+        <Button x:Name="nineButton"
                 Content="9"
                 FontSize="18"
                 Grid.Row="2"
                 Grid.Column="2"
                 Margin="5"
                 />
-        <Button x:Name="btnMultiply"
+        <Button x:Name="multiplyButton"
                 Content="*"
                 FontSize="18"
                 Grid.Row="2"
@@ -94,27 +94,27 @@
                 />
 
         <!--Third button row-->
-        <Button x:Name="btnSix"
+        <Button x:Name="sixButton"
                 Content="6"
                 FontSize="18"
                 Grid.Row="3"
                 Margin="5"
                 />
-        <Button x:Name="btnFive"
+        <Button x:Name="fiveButton"
                 Content="5"
                 FontSize="18"
                 Grid.Row="3"
                 Grid.Column="1"
                 Margin="5"
                 />
-        <Button x:Name="btnFour"
+        <Button x:Name="fourButton"
                 Content="4"
                 FontSize="18"
                 Grid.Row="3"
                 Grid.Column="2"
                 Margin="5"
                 />
-        <Button x:Name="btnMinus"
+        <Button x:Name="minusButton"
                 Content="-"
                 FontSize="18"
                 Grid.Row="3"
@@ -123,27 +123,27 @@
                 />
 
         <!--Fourth button row-->
-        <Button x:Name="btnThree"
+        <Button x:Name="threeButton"
                 Content="3"
                 FontSize="18"
                 Grid.Row="4"
                 Margin="5"
                 />
-        <Button x:Name="btnTwo"
+        <Button x:Name="twoButton"
                 Content="2"
                 FontSize="18"
                 Grid.Row="4"
                 Grid.Column="1"
                 Margin="5"
                 />
-        <Button x:Name="btnOne"
+        <Button x:Name="oneButton"
                 Content="1"
                 FontSize="18"
                 Grid.Row="4"
                 Grid.Column="2"
                 Margin="5"
                 />
-        <Button x:Name="btnPlus"
+        <Button x:Name="plusButton"
                 Content="+"
                 FontSize="18"
                 Grid.Row="4"
@@ -152,21 +152,21 @@
                 />
 
         <!--Fifth button row-->
-        <Button x:Name="btnZero"
+        <Button x:Name="zeroButton"
                 Content="0"
                 FontSize="18"
                 Grid.Row="5"
                 Margin="5"
                 Grid.ColumnSpan="2"
                 />
-        <Button x:Name="btnPoint"
+        <Button x:Name="decimalPointButton"
                 Content="."
                 FontSize="18"
                 Grid.Row="5"
                 Grid.Column="2"
                 Margin="5"
                 />
-        <Button x:Name="btnEquals"
+        <Button x:Name="equalsButton"
                 Content="="
                 FontSize="18"
                 Grid.Row="5"
